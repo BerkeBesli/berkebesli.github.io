@@ -1,6 +1,6 @@
 # Berke Beşli — Personal Portfolio Site
 
-A personal portfolio site (Ana Sayfa / Özgeçmiş / Projeler) built with plain HTML, CSS, and a small amount of vanilla JavaScript.
+A personal portfolio site built with plain HTML, CSS, and a small amount of vanilla JavaScript.
 
 ## Tech stack
 
