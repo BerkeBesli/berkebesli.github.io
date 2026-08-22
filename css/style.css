@@ -11,17 +11,17 @@
 }
 
 body {
-    background-color: #f8fafc; /* Kırık beyaz */
-    color: #475569; /* Slate 600 - Yormayan, okunaklı metin rengi */
+    background-color: #f8fafc;
+    color: #475569; 
     line-height: 1.7;
-    -webkit-font-smoothing: antialiased; /* Fontları ekranda pürüzsüzleştirir */
+    -webkit-font-smoothing: antialiased; 
     -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #0f172a; /* Slate 900 - Keskin ve net başlıklar */
+    color: #0f172a; 
     font-weight: 600;
-    letter-spacing: -0.02em; /* Modern tipografi için hafif sıkıştırılmış harf arası */
+    letter-spacing: -0.02em; 
 }
 
 a {
@@ -31,7 +31,6 @@ a {
 
 /* --- 2. NAVİGASYON (FROSTED GLASS EFEKTİ) --- */
 nav {
-    /* Cam efekti (Buzlu cam menü) */
     background: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -68,7 +67,6 @@ nav {
     gap: 2.5rem;
 }
 
-/* Hamburger buton - varsayılan olarak gizli, sadece mobilde görünür */
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -104,7 +102,6 @@ nav {
     position: relative;
 }
 
-/* Alt çizgi animasyonu (Premium his) */
 .nav-links a::after {
     content: '';
     position: absolute;
@@ -120,26 +117,32 @@ nav {
 .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
 .nav-links a.active { color: var(--accent-text); font-weight: 600; }
 
-/* --- 3. PREMIUM KART TASARIMLARI --- */
+/* --- 3. PREMIUM KART TASARIMLARI VE GENEL DÜZEN --- */
 main {
     max-width: 1150px;
     margin: 4rem auto;
     padding: 0 2rem;
 }
 
-/* Tüm kartları birleştiren ortak premium sınıf */
-.hero-card, .stat-card, .about-card, .expertise-section, .contact-section,
+/* Sayfadaki ana bölümler arasına dikey boşluk ekleme */
+main > section {
+    margin-bottom: 4rem;
+}
+
+main > section:last-child {
+    margin-bottom: 0;
+}
+
+.hero-card, .about-card, .expertise-section, .contact-section,
 .resume-summary-card, .resume-main-card, .skill-box, .project-inner-card {
     background: #fff;
     border-radius: 16px;
     padding: 2.5rem;
-    /* Keskin gölgeler yerine, yayılmış yumuşak SaaS gölgesi */
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 10px 30px -5px rgba(15, 23, 42, 0.04);
     border: 1px solid rgba(226, 232, 240, 0.8);
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-/* Kartların üzerine gelince zarifçe yükselmesi */
 .expertise-card:hover, .skill-box:hover, .project-inner-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 40px -10px rgba(14, 165, 233, 0.08);
@@ -159,7 +162,6 @@ main {
     color: #0f172a;
 }
 
-/* Intro heading inside summary cards (e.g. "Profesyonel Özet", "Öne Çıkan Çalışmalar") */
 .resume-summary-card h2 {
     margin-bottom: 1rem;
 }
@@ -172,11 +174,15 @@ main {
     margin-bottom: 1.5rem;
 }
 
+.action-tags {
+    margin-top: 1.5rem; /* Butonlarla metin arasını dengeler */
+}
+
 .tag, .action-tag, .p-tag {
     background-color: #f0f9ff;
     color: var(--accent-text);
     padding: 0.4rem 1rem;
-    border-radius: 99px; /* Tam yuvarlak hap tasarımı */
+    border-radius: 99px; 
     font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -193,7 +199,7 @@ main {
 
 .btn, .contact-btn, .btn-outline {
     padding: 0.75rem 1.5rem;
-    border-radius: 8px; /* Modern kurumsal kavis */
+    border-radius: 8px; 
     font-weight: 500;
     font-size: 0.95rem;
     cursor: pointer;
@@ -205,7 +211,7 @@ main {
     background-color: var(--accent-text);
     color: #fff;
     border: 1px solid var(--accent-text);
-    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.25); /* Buton renginde parlayan gölge */
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.25); 
 }
 
 .btn-primary:hover {
@@ -252,35 +258,17 @@ main {
 
 .profile-image {
     width: 100%;
-    max-width: 4800px; /* İstediğin gibi 400px'den biraz daha büyük bir sınır */
-    aspect-ratio: 4 / 5; /* Görselin kesinlikle 4:5 oranında (dikey) kalmasını sağlar */
-    object-fit: cover; /* Fotoğrafın oranı farklı olsa bile sündürmeden çerçevenin içine oturtur */
-    border-radius: 24px; /* Keskin köşeleri yok edip modern, pürüzsüz bir hissiyat verir */
-    box-shadow: 0 20px 40px -10px rgba(14, 165, 233, 0.15); /* Eski tasarımdaki premium gölge */
+    max-width: 420px; /* 4800px olan yazım hatası düzeltildi */
+    aspect-ratio: 4 / 5; 
+    object-fit: cover; 
+    border-radius: 24px; 
+    box-shadow: 0 20px 40px -10px rgba(14, 165, 233, 0.15); 
     border: 1px solid #bae6fd;
     transition: transform 0.3s ease;
 }
 
-/* Mouse ile üzerine gelindiğinde zarifçe yukarı kalkma efekti */
 .profile-image:hover {
     transform: translateY(-4px);
-}
-
-
-.stats-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-bottom: 4rem;
-    text-align: center;
-}
-
-.stat-card .stat-number {
-    font-size: 3rem;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    color: var(--accent-text);
-    margin-bottom: 0.2rem;
 }
 
 .expertise-grid, .skills-grid-2x2 {
@@ -289,7 +277,29 @@ main {
     gap: 1.5rem;
 }
 
-/* --- 6. ZAMAN ÇİZELGESİ (TIMELINE) & YETKİNLİKLER --- */
+/* Hakkımda Özel Madde Listesi */
+.custom-list {
+    list-style: none;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.custom-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.7rem;
+    width: 5px;
+    height: 5px;
+    background-color: #cbd5e1;
+    border-radius: 50%;
+}
+
+/* --- 6. ÖZGEÇMİŞ SAYFASI (TIMELINE, DİLLER, SERTİFİKALAR) --- */
 .resume-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -298,7 +308,7 @@ main {
 
 .timeline {
     position: relative;
-    border-left: 1px solid #e2e8f0; /* Daha zarif ince çizgi */
+    border-left: 1px solid #e2e8f0; 
     margin-left: 0.5rem;
     padding-left: 2.5rem;
 }
@@ -310,7 +320,6 @@ main {
 
 .timeline-item:last-child { margin-bottom: 0; }
 
-/* Çift katmanlı modern nokta tasarımı */
 .timeline-dot {
     position: absolute;
     left: -2.9rem;
@@ -320,7 +329,7 @@ main {
     background-color: #fff;
     border: 3px solid #0ea5e9;
     border-radius: 50%;
-    box-shadow: 0 0 0 4px #f0f9ff; /* Noktanın etrafındaki ferah boşluk (hale) */
+    box-shadow: 0 0 0 4px #f0f9ff; 
 }
 
 .timeline-item-header {
@@ -369,11 +378,15 @@ main {
     border-radius: 50%;
 }
 
+.skills-header {
+    margin-top: 3rem;
+}
+
 .dot-header {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0; 
     font-size: 1.05rem;
 }
 
@@ -396,38 +409,42 @@ main {
     font-size: 1rem;
 }
 
-/* "Diller" ve "Yetkinlikler" başlıkları için ortak üst boşluk
-   (önceden yalnızca "Diller" satır-içi style ile ayarlanmıştı) */
-.skills-header {
-    margin-top: 3rem;
-}
-
 .lang-level {
     color: #64748b;
     font-weight: 400;
     font-size: 0.9rem;
 }
 
-/* "Hakkımda" bölümündeki madde listesi - .task-list ile aynı nokta işareti */
-.custom-list {
-    list-style: none;
+.cert-details {
+    display: block;
+    padding-left: 20px;
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-top: 0.15rem;
 }
 
-.custom-list li {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 0.8rem;
+/* Sütun Düzenleri (Diller ve Sertifikalar İçin Ortak Grid) */
+.languages-column,
+.certificates-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
 }
 
-.custom-list li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0.7rem;
-    width: 5px;
-    height: 5px;
-    background-color: #cbd5e1;
-    border-radius: 50%;
+/* Yetkinlikler (Dar Boşluklu Grid) */
+.expertise-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem; /* İstediğin o çok ufak aralık */
+}
+
+.expertise-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    /* margin-bottom özelliği kaldırıldı, hizalamayı artık grid gap yapıyor */
 }
 
 /* --- 7. PROJELER SAYFASI GRID --- */
@@ -465,8 +482,6 @@ main {
     flex-shrink: 0;
 }
 
-/* Used for projects that don't have a public link yet, instead of pointing
-   the button at the wrong repo or leaving it broken */
 .btn-outline.btn-disabled {
     opacity: 0.55;
     cursor: not-allowed;
@@ -476,17 +491,11 @@ main {
 
 /* --- 8. ZARİF ARKA PLAN DALGALARI (PREMIUM TUNING) --- */
 :root {
-    /* Erişilebilir metin/buton rengi: orijinal #0ea5e9 marka mavisi, metin ve buton
-       zemini olarak kullanıldığında WCAG AA kontrast eşiğini (4.5:1) geçemiyor.
-       Bu koyulaştırılmış ton aynı renk ailesinde kalıp okunabilirliği sağlıyor.
-       Dekoratif kullanımlar (alt çizgiler, kenarlıklar, gölgeler) orijinal tonda kalır. */
     --accent-text: #0369a1;
-
-    /* Dalgalar artık beyaz değil, ferah ve premium açık mavi tonlarında */
-    --wave-layer-1: rgba(14, 165, 233, 0.12); /* Gökyüzü mavisi (En arka katman) */
-    --wave-layer-2: rgba(56, 189, 248, 0.18); /* Parlak açık mavi */
-    --wave-layer-3: rgba(186, 230, 253, 0.35); /* Yumuşak buz mavisi */
-    --wave-layer-4: rgba(224, 242, 254, 0.85); /* En ön katman: Saf beyaz yerine çok açık mavi */
+    --wave-layer-1: rgba(14, 165, 233, 0.12); 
+    --wave-layer-2: rgba(56, 189, 248, 0.18); 
+    --wave-layer-3: rgba(186, 230, 253, 0.35); 
+    --wave-layer-4: rgba(224, 242, 254, 0.85); 
 }
 
 .premium-wave-bg {
@@ -580,7 +589,6 @@ main {
 /* --- 10. MOBİL UYUM (RESPONSIVE) --- */
 @media (max-width: 992px) {
     .hero-container, .resume-layout { grid-template-columns: 1fr; gap: 2.5rem; }
-    .stats-container { grid-template-columns: 1fr; gap: 1.5rem; }
     .expertise-grid, .skills-grid-2x2 { grid-template-columns: 1fr; }
     .projects-grid { grid-template-columns: repeat(2, 1fr); }
 }
@@ -682,56 +690,4 @@ button:focus-visible {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
-}
-
-/* Yetkinlikler içindeki alt kutular (İç Kartlar) */
-.expertise-card {
-    background-color: #ffffff;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    padding: 1.5rem;
-    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 1.5rem;
-}
-
-.expertise-card:last-child {
-    margin-bottom: 0; 
-}
-
-.expertise-card:hover {
-    transform: translateY(-4px);
-    border-color: #bae6fd;
-    box-shadow: 0 10px 40px -10px rgba(14, 165, 233, 0.08);
-}
-
-/* Sayfadaki ana bölümler arasına dikey boşluk ekleme */
-main > section {
-    margin-bottom: 4rem;
-}
-
-main > section:last-child {
-    margin-bottom: 0;
-}
-
-/* Diller bölümü kutularını alt alta tam genişlikte sıralar */
-.languages-column {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-}
-
-/* Sertifikalar bölümü kutularını alt alta tam genişlikte sıralar */
-.certificates-column {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-}
-
-/* Sertifika detay metni (Kurum ve açıklama) */
-.cert-details {
-    display: block;
-    padding-left: 20px;
-    color: #64748b;
-    font-size: 0.95rem;
-    margin-top: 0.3rem;
 }
