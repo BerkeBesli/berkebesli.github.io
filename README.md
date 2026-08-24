@@ -2,7 +2,6 @@
 
 Bu depo, kişisel portfolyo web sitemin kaynak kodlarını içermektedir. Yazılım geliştirme, veri bilimi ve yapay zeka alanlarına odaklanan bir Mekatronik Mühendisi olarak; bu siteyi hem dijital bir özgeçmiş hem de geliştirdiğim veri odaklı projeleri sergilediğim profesyonel bir vitrin olması amacıyla tasarladım.
 
-Site, herhangi bir framework veya harici bağımlılık kullanılmadan vanilla web teknolojileriyle geliştirilmiş olup, doğrudan GitHub Pages üzerinden yayınlanacak şekilde kurgulanmıştır.
 
 ## 📌 Sitenin İçeriği ve Yapısı
 
