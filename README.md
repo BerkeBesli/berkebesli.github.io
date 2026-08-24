@@ -9,7 +9,7 @@ Bu depo, kişisel portfolyo web sitemin kaynak kodlarını içermektedir. Yazıl
 *   **Özgeçmiş (`resume.html`):** Akademik geçmişim, iş tecrübelerim ve sahip olduğum profesyonel sertifikaların modern bir yapıda sunulan kronolojik özeti.
 *   **Projeler (`projects.html`):** Veri bilimi, makine öğrenmesi ve optimizasyon algoritmaları kullanarak geliştirdiğim uçtan uca çalışmaların detayları ve GitHub depo bağlantıları.
 
-## 🛠️ Geliştirme Altyapısı (Tech Stack)
+## 🛠️ Geliştirme Altyapısı 
 
 *   **HTML5:** Semantik yapı ve erişilebilirlik standartları.
 *   **CSS3:** Flexbox, CSS Grid ve özel CSS değişkenleri kullanılarak oluşturulan modern UI tasarımı.
