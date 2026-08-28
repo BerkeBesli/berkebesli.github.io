@@ -167,28 +167,6 @@ main > section:last-child {
 }
 
 /* --- 4. BUTONLAR VE ETİKETLER (TAGS) --- */
-.tags, .action-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    margin-bottom: 1.5rem;
-}
-
-.action-tags {
-    margin-top: 1.5rem; /* Butonlarla metin arasını dengeler */
-}
-
-.tag, .action-tag, .p-tag {
-    background-color: #f0f9ff;
-    color: var(--accent-text);
-    padding: 0.4rem 1rem;
-    border-radius: 99px; 
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    border: 1px solid #e0f2fe;
-}
 
 .buttons, .contact-buttons {
     display: flex;
