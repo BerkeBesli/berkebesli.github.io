@@ -1,6 +1,6 @@
 # Berke Beşli — Kişisel Portfolyo
 
-Bu depo, kişisel portfolyo web sitemin kaynak kodlarını içermektedir. Yazılım geliştirme, veri bilimi ve yapay zeka alanlarına odaklanan bir Mekatronik Mühendisi olarak; bu siteyi hem dijital bir özgeçmiş hem de geliştirdiğim veri odaklı projeleri sergilediğim profesyonel bir vitrin olması amacıyla tasarladım.
+Bu depo, kişisel portfolyo web sitemin kaynak kodlarını içermektedir. Bu siteyi hem dijital bir özgeçmiş hem de geliştirdiğim veri odaklı projeleri sergilediğim profesyonel bir vitrin olması amacıyla tasarladım.
 
 
 ## 📌 Sitenin İçeriği ve Yapısı
