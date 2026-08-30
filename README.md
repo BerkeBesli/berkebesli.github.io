@@ -6,7 +6,7 @@ Bu depo, kişisel portfolyo web sitemin kaynak kodlarını içermektedir. Bu sit
 ## 📌 Sitenin İçeriği ve Yapısı
 
 *   **Ana Sayfa:** Profesyonel kimliğimi, temel odak alanlarımı ve teknoloji yığınımı özetleyen giriş bölümü.
-*   **Özgeçmiş:** Akademik geçmişim, iş tecrübelerim ve sahip olduğum profesyonel sertifikaların modern bir yapıda sunulan kronolojik özeti.
+*   **Özgeçmiş:** Akademik geçmişim, iş tecrübelerim ve sahip olduğum profesyonel sertifikaların kronolojik özeti.
 *   **Projeler:** Veri bilimi, makine öğrenmesi ve optimizasyon algoritmaları kullanarak geliştirdiğim uçtan uca çalışmaların detayları ve GitHub depo bağlantıları.
 
 ## 🛠️ Geliştirme Altyapısı 
