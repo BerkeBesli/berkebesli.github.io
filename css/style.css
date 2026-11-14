@@ -709,16 +709,42 @@ main > section:last-child {
     -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 60%);
 }
 
-/* --- 9. SCROLL ANİMASYONLARI --- */
-.reveal {
-    opacity: 0;
-    transform: translateY(28px);
-    transition: opacity 0.75s ease-out, transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+/* --- 9. SCROLL VE GİRİŞ ANİMASYONLARI (GÜVENLİ MOD) --- */
+@keyframes fadeUpIn {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.reveal.is-visible {
+/* JavaScript çalışmasa veya önbellekte kalsa bile içerikler her zaman görünür */
+.reveal {
     opacity: 1;
     transform: translateY(0);
+    animation: fadeUpIn 0.75s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Bölümlerin sırayla yumuşakça ekrana gelmesi için gecikme süreleri */
+.hero-container.reveal { animation-delay: 0.05s; }
+.tech-pills-section.reveal { animation-delay: 0.18s; }
+.about-open-section.reveal { animation-delay: 0.30s; }
+.contact-open-section.reveal { animation-delay: 0.40s; }
+
+/* Sadece yeni JS aktif olduğunda sayfanın altındaki bölümleri scroll ile tetikle */
+.js-scroll-ready .reveal:not(.is-visible) {
+    opacity: 0;
+    transform: translateY(28px);
+    animation: none;
+}
+
+.js-scroll-ready .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.75s ease-out, transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* --- 10. FOOTER --- */
