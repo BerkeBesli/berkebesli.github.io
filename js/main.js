@@ -11,25 +11,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 2. Scroll Reveal (Kaydırdıkça Yumuşak Belirme) Animasyonu
+    // 2. Güvenli Scroll Reveal Animasyonu
     const revealElements = document.querySelectorAll('.reveal');
 
-    if ('IntersectionObserver' in window) {
+    if ('IntersectionObserver' in window && revealElements.length > 0) {
+        document.body.classList.add('js-scroll-ready');
+
         const revealObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('is-visible');
-                    observer.unobserve(entry.target); // Bir kez belirdikten sonra tekrar gizleme
+                    observer.unobserve(entry.target);
                 }
             });
         }, {
-            threshold: 0.12,
-            rootMargin: '0px 0px -40px 0px'
+            threshold: 0.1,
+            rootMargin: '0px 0px -30px 0px'
         });
 
         revealElements.forEach(el => revealObserver.observe(el));
-    } else {
-        // Eski tarayıcılar için yedek
-        revealElements.forEach(el => el.classList.add('is-visible'));
     }
 });
