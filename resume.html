@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <title>Özgeçmiş - Berke Beşli</title>
     <meta name="description" content="Berke Beşli'nin profesyonel özgeçmişi. Veri bilimi uzmanlığı, yetkinlikleri ve mekatronik mühendisliği akademik geçmişi.">
     <link rel="canonical" href="https://berkebesli.github.io/resume.html">
@@ -14,19 +13,21 @@
     <meta property="og:title" content="Özgeçmiş - Berke Beşli">
     <meta property="og:description" content="Berke Beşli'nin profesyonel özgeçmişi, veri bilimi uzmanlığı ve akademik geçmişi.">
     <meta property="og:url" content="https://berkebesli.github.io/resume.html">
-    <!-- <meta property="og:image" content="https://berkebesli.github.io/images/og-image.jpg"> -->
-    <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
 
-    <!-- Performans (Phase 5) -->
+    <!-- Performans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <a href="#main-content" class="skip-link">İçeriğe geç</a>
+
+    <!-- Hareketli Dalga Arka Planı ve Ambiyans Işığı -->
     <div class="premium-wave-bg" aria-hidden="true">
+        <div class="ambient-glow glow-top-left"></div>
+        <div class="ambient-glow glow-top-right"></div>
         <svg class="editorial-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
             <defs>
@@ -41,9 +42,11 @@
         </svg>
         <div class="wave-blur-overlay"></div>
     </div>
+
+    <!-- Navigasyon -->
     <nav aria-label="Ana navigasyon">
         <div class="nav-container">
-            <a href="index.html" class="brand">Berke <span>Beşli</span></a>
+            <a href="index.html" class="brand">Berke <span>Beşli.</span></a>
             <button class="nav-toggle" id="navToggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="navLinks">
                 <span></span><span></span><span></span>
             </button>
@@ -56,157 +59,200 @@
     </nav>
 
     <main id="main-content">
-        <h1 class="page-title">ÖZGEÇMİŞ</h1>
-
-        <section class="resume-summary-card">
-            <h2>Profesyonel Özet</h2>
-            <p> 
-                Üniversite eğitimime başladığım yıl, ayrıca BigStyle mağazasında part-time satış elemanı olarak çalışmaya başladım ve son 6 senedir satış ve pazarlama tecrübesiyle başlayıp, müşteri ihtiyaçlarını anlama ve problem çözme konularında güçlü bir altyapı oluşturdum. Stajyer yazılım geliştirici olarak edindiğim ERP ve veritabanı yönetimi tecrübesinin üzerine, katıldığım yapay zeka ve veri bilimi bootcamp'i ile Python ve veri analitiği yetkinliklerini ekleyerek, teknik altyapımı güçlendirdim. Bu yolculukta güncel olarak kendimi geliştirmeye ve yeni teknolojileri öğrenmeye devam ediyorum.
-            </p>
-
+        <!-- ÜST ÖZET ALANI (Kutusuz Editoryal Yapı) -->
+        <section class="resume-intro-open reveal">
+            <div class="resume-intro-header">
+                <span class="section-kicker">Kariyer &amp; Akademik Geçmiş</span>
+                <h1 class="editorial-title"><span class="text-gradient">Özgeçmiş</span></h1>
+                <div class="heading-line-dot"></div>
+            </div>
+            <div class="resume-intro-text">
+                <h2 class="visually-hidden">Profesyonel Özet</h2>
+                <p>
+                    Üniversite eğitimime başladığım yıl, ayrıca BigStyle mağazasında part-time satış elemanı olarak çalışmaya başladım ve son 6 senedir satış ve pazarlama tecrübesiyle başlayıp, müşteri ihtiyaçlarını anlama ve problem çözme konularında güçlü bir altyapı oluşturdum. Stajyer yazılım geliştirici olarak edindiğim <strong>ERP ve veritabanı yönetimi</strong> tecrübesinin üzerine, katıldığım yapay zeka ve veri bilimi bootcamp'i ile <strong>Python ve veri analitiği</strong> yetkinliklerini ekleyerek teknik altyapımı güçlendirdim. Bu yolculukta güncel olarak kendimi geliştirmeye ve yeni teknolojileri öğrenmeye devam ediyorum.
+                </p>
+            </div>
         </section>
 
-        <section class="resume-main-card">
+        <!-- ANA ÖZGEÇMİŞ İÇERİĞİ (Masaüstünde 2 Sütun, Mobilde Özel Sıralama) -->
+        <section class="resume-open-section reveal">
             <div class="resume-layout">
 
+                <!-- SOL SÜTUN (Masaüstü) -->
                 <div class="resume-column">
-                    <h2 class="section-header">Deneyim</h2>
-
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-item-header">
-                                <h3>Stajyer Yazılım Geliştirici</h3>
-                                <span class="institution-text">Sentez Yazılım</span>
-                            </div>
-                            <span class="timeline-date">Haziran 2024 — Eylül 2024</span>
-                            <ul class="task-list">
-                                <li>C# yazılım dili, OOP kullanma ve SQL sorguları yapma konularında tecrübe edindim.</li>
-                                <li>Firmanın ERP programının kullanımını ve backend tarafında nasıl yönetildiğini öğrendim.</li>
-                                <li>ERP sisteminde stok yönetimi üzerinde çalışarak SQL'de ilişkisel veritabanları oluşturmak, yönetmek ve alt sorgular (subquery) yapmak hakkında tecrübe kazandım.</li>
-                            </ul>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-item-header">
-                                <h3>Part-Time Satış Elemanı</h3>
-                                <span class="institution-text">BigStyle</span>
-                            </div>
-                            <span class="timeline-date">Haziran 2020 — Mayıs 2024</span>
-                            <ul class="task-list">
-                                <li>Mağaza satışlarıyla ve müşterilerle ilgilenerek müşteri davranışları ve problem çözme konularında tecrübe kazandım.</li>
-                                <li>Uluslararası müşterilerle iletişim sorumluluğunu üstlendim ve İngilizce seviyemi pratik olarak geliştirdim.</li>
-                                <li>Son 5 yılın satış verilerini analiz ederek yüksek performanslı ürünleri öne çıkarttım ve mağaza satışlarını arttırmaya yönelik aksiyonlar aldım.</li>
-                            </ul>
-                        </div>
-                    </div>
                     
-                    <h2 class="section-header skills-header">Yetkinlikler</h2>
-                    <div class="expertise-column">
-                        <div class="expertise-card">
-                            <h3>Yazılım Geliştirme</h3>
-                            <p>Python · C# · Nesne Yönelimli Programlama (OOP) · RESTful API'ler · HTML/CSS</p>
+                    <!-- 1. DENEYİM (Mobil Sıra: 1) -->
+                    <div class="resume-block block-experience">
+                        <div class="block-header">
+                            <h2 class="editorial-heading">Deneyim</h2>
+                            <div class="heading-line-dot"></div>
                         </div>
-                        
-                        <div class="expertise-card">
-                            <h3>Altyapı ve DevOps</h3>
-                            <p>Docker · Kubernetes · Monorepo Yönetimi · Git / GitHub · Mikroservis Mimarisi · PyCharm · Anaconda</p>
-                        </div>
-                        
-                        <div class="expertise-card">
-                            <h3>Veri ve Algoritmalar</h3>
-                            <p>MS SQL · İlişkisel Veritabanı Tasarımı · Apriori Algoritması · Özellik Mühendisliği · Keşifçi Veri Analizi</p>
-                        </div>
-                        
-                        <div class="expertise-card">
-                            <h3>Takım Çalışması</h3>
-                            <p>Stratejik Planlama · Proje Yönetimi · Ekipler Arası İletişim · Süreç Optimizasyonu</p>
+
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-item-header">
+                                    <h3>Stajyer Yazılım Geliştirici</h3>
+                                    <span class="institution-badge">Sentez Yazılım</span>
+                                </div>
+                                <span class="timeline-date">Haziran 2024 — Eylül 2024</span>
+                                <ul class="task-list">
+                                    <li>C# yazılım dili, OOP kullanma ve SQL sorguları yapma konularında tecrübe edindim.</li>
+                                    <li>Firmanın ERP programının kullanımını ve backend tarafında nasıl yönetildiğini öğrendim.</li>
+                                    <li>ERP sisteminde stok yönetimi üzerinde çalışarak SQL'de ilişkisel veritabanları oluşturmak, yönetmek ve alt sorgular (subquery) yapmak hakkında tecrübe kazandım.</li>
+                                </ul>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-item-header">
+                                    <h3>Part-Time Satış Elemanı</h3>
+                                    <span class="institution-badge">BigStyle</span>
+                                </div>
+                                <span class="timeline-date">Haziran 2020 — Mayıs 2024</span>
+                                <ul class="task-list">
+                                    <li>Mağaza satışlarıyla ve müşterilerle ilgilenerek müşteri davranışları ve problem çözme konularında tecrübe kazandım.</li>
+                                    <li>Uluslararası müşterilerle iletişim sorumluluğunu üstlendim ve İngilizce seviyemi pratik olarak geliştirdim.</li>
+                                    <li>Son 5 yılın satış verilerini analiz ederek yüksek performanslı ürünleri öne çıkarttım ve mağaza satışlarını arttırmaya yönelik aksiyonlar aldım.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
-                    <h2 class="section-header skills-header">Diller</h2>
-                    <div class="languages-column">
-                        <div class="skill-box">
-                            <h3 class="dot-header">İngilizce<span class="lang-level">- C2 Seviye</span></h3>
+                    <!-- 3. YETKİNLİKLER (Mobil Sıra: 3) -->
+                    <div class="resume-block block-skills">
+                        <div class="block-header">
+                            <h2 class="editorial-heading">Yetkinlikler</h2>
+                            <div class="heading-line-dot"></div>
                         </div>
-                        <div class="skill-box">
-                            <h3 class="dot-header">İtalyanca<span class="lang-level">- B1 Seviye</span></h3>
+
+                        <div class="open-list-group">
+                            <div class="open-list-item">
+                                <h3>Yazılım Geliştirme</h3>
+                                <p>Python · C# · Nesne Yönelimli Programlama (OOP) · RESTful API'ler · HTML/CSS</p>
+                            </div>
+
+                            <div class="open-list-item">
+                                <h3>Altyapı ve DevOps</h3>
+                                <p>Docker · Kubernetes · Monorepo Yönetimi · Git / GitHub · Mikroservis Mimarisi · PyCharm · Anaconda</p>
+                            </div>
+
+                            <div class="open-list-item">
+                                <h3>Veri ve Algoritmalar</h3>
+                                <p>MS SQL · İlişkisel Veritabanı Tasarımı · Apriori Algoritması · Özellik Mühendisliği · Keşifçi Veri Analizi</p>
+                            </div>
+
+                            <div class="open-list-item">
+                                <h3>Takım Çalışması</h3>
+                                <p>Stratejik Planlama · Proje Yönetimi · Ekipler Arası İletişim · Süreç Optimizasyonu</p>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- 5. DİLLER (Mobil Sıra: 5) -->
+                    <div class="resume-block block-languages">
+                        <div class="block-header">
+                            <h2 class="editorial-heading">Diller</h2>
+                            <div class="heading-line-dot"></div>
+                        </div>
+
+                        <div class="open-lang-group">
+                            <div class="open-lang-item">
+                                <span class="dot-header">İngilizce</span>
+                                <span class="lang-badge">C2 Seviye</span>
+                            </div>
+                            <div class="open-lang-item">
+                                <span class="dot-header">İtalyanca</span>
+                                <span class="lang-badge">B1 Seviye</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
-
-
-
-
+                <!-- SAĞ SÜTUN (Masaüstü) -->
                 <div class="resume-column">
-                    <h2 class="section-header">Eğitim</h2>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-item-header">
-                                <h3>AI &amp; Veri Bilimi Bootcamp</h3>
-                                <span class="institution-text">Miuul</span>
-                            </div>
-                            <span class="timeline-date">Aralık 2025 — Bugün</span>
-                            <ul class="task-list">
-                                <li>Python ve SQL kullanarak karmaşık veri setleri üzerinde veri temizliği, keşifçi veri analizi (EDA) yaptım ve verileri Pandas, Matplotlib ile anlaşılabilir görsel raporlara dönüştürdüm.</li>
-                                <li>Müşteri segmentasyonunu optimize etmek ve hedefli pazarlama stratejilerini güçlendirmek amacıyla CRM analitiği kullanarak RFM analizi modelleri geliştirdim.</li>
-                                <li>GenAI kullandığım projeler geliştirdim ve yapay zeka destekli uygulamalar hakkında tecrübe kazandım.</li>
-                            </ul>
+
+                    <!-- 2. EĞİTİM (Mobil Sıra: 2) -->
+                    <div class="resume-block block-education">
+                        <div class="block-header">
+                            <h2 class="editorial-heading">Eğitim</h2>
+                            <div class="heading-line-dot"></div>
                         </div>
 
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-item-header">
-                                <h3>Mekatronik Mühendisliği Lisansı</h3>
-                                <span class="institution-text">Bilgi Üniversitesi</span>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-item-header">
+                                    <h3>AI &amp; Veri Bilimi Bootcamp</h3>
+                                    <span class="institution-badge">Miuul</span>
+                                </div>
+                                <span class="timeline-date">Aralık 2025 — Bugün</span>
+                                <ul class="task-list">
+                                    <li>Python ve SQL kullanarak karmaşık veri setleri üzerinde veri temizliği, keşifçi veri analizi (EDA) yaptım ve verileri Pandas, Matplotlib ile anlaşılabilir görsel raporlara dönüştürdüm.</li>
+                                    <li>Müşteri segmentasyonunu optimize etmek ve hedefli pazarlama stratejilerini güçlendirmek amacıyla CRM analitiği kullanarak RFM analizi modelleri geliştirdim.</li>
+                                    <li>GenAI kullandığım projeler geliştirdim ve yapay zeka destekli uygulamalar hakkında tecrübe kazandım.</li>
+                                </ul>
                             </div>
-                            <span class="timeline-date">Eylül 2020 — Haziran 2025</span>
-                            <p class="timeline-desc">Mühendislik ve Doğa Bilimleri Fakültesi.</p>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-item-header">
+                                    <h3>Mekatronik Mühendisliği Lisansı</h3>
+                                    <span class="institution-badge">Bilgi Üniversitesi</span>
+                                </div>
+                                <span class="timeline-date">Eylül 2020 — Haziran 2025</span>
+                                <p class="timeline-desc">Mühendislik ve Doğa Bilimleri Fakültesi.</p>
+                            </div>
                         </div>
                     </div>
 
-                    <h2 class="section-header skills-header">Sertifikalar ve Başarılar</h2>
-                    <div class="certificates-column">
-                        
-                        <div class="skill-box">
-                            <h3 class="dot-header">Veri Bilimi ve Yapay Zeka Bootcamp</h3>
-                            <p class="cert-details">Miuul &mdash; 6 Aylık Uygulamalı Eğitim Programı</p>
+                    <!-- 4. SERTİFİKALAR VE BAŞARILAR (Mobil Sıra: 4) -->
+                    <div class="resume-block block-certificates">
+                        <div class="block-header">
+                            <h2 class="editorial-heading">Sertifikalar ve Başarılar</h2>
+                            <div class="heading-line-dot"></div>
                         </div>
 
-                        <div class="skill-box">
-                            <h3 class="dot-header">Python Sertifikaları</h3>
-                            <p class="cert-details">Python PCEP: Entry-Level Python - Adrian Wiech</p>
-                            <p class="cert-details">Python for Data Science - Miuul</p>
-                        </div>
+                        <div class="open-list-group">
+                            <div class="open-cert-item">
+                                <h3 class="dot-header">Veri Bilimi ve Yapay Zeka Bootcamp</h3>
+                                <p class="cert-details">Miuul &mdash; 6 Aylık Uygulamalı Eğitim Programı</p>
+                            </div>
 
-                        <div class="skill-box">
-                            <h3 class="dot-header">Makine Öğrenmesi Sertifikası</h3>
-                            <p class="cert-details">Machine Learning - Miuul</p>
-                        </div>
+                            <div class="open-cert-item">
+                                <h3 class="dot-header">Python Sertifikaları</h3>
+                                <p class="cert-details">Python PCEP: Entry-Level Python - Adrian Wiech</p>
+                                <p class="cert-details">Python for Data Science - Miuul</p>
+                            </div>
 
-                        <div class="skill-box">
-                            <h3 class="dot-header">CRM Analitiği Sertifikası</h3>
-                            <p class="cert-details">CRM Analytics - Miuul</p>
-                        </div>
+                            <div class="open-cert-item">
+                                <h3 class="dot-header">Makine Öğrenmesi Sertifikası</h3>
+                                <p class="cert-details">Machine Learning - Miuul</p>
+                            </div>
 
-                        <div class="skill-box">
-                            <h3 class="dot-header">Git/Github Sertifikası</h3>
-                            <p class="cert-details">Git ve Github Eğitimi - Techcareergit</p>
-                        </div>
+                            <div class="open-cert-item">
+                                <h3 class="dot-header">CRM Analitiği Sertifikası</h3>
+                                <p class="cert-details">CRM Analytics - Miuul</p>
+                            </div>
 
-                        <div class="skill-box">
-                            <h3 class="dot-header">Docker Sertifikası</h3>
-                            <p class="cert-details">A'dan Z'ye Docker - Özgür Öztürk</p>
-                        </div>
-                        
-                        <div class="skill-box">
-                            <h3 class="dot-header">Kubernetes Sertifikası</h3>
-                            <p class="cert-details">K8s Training: From Zero to Cloud - Rayan Slim</p>
+                            <div class="open-cert-item">
+                                <h3 class="dot-header">Git/Github Sertifikası</h3>
+                                <p class="cert-details">Git ve Github Eğitimi - Techcareergit</p>
+                            </div>
+
+                            <div class="open-cert-item">
+                                <h3 class="dot-header">Docker Sertifikası</h3>
+                                <p class="cert-details">A'dan Z'ye Docker - Özgür Öztürk</p>
+                            </div>
+
+                            <div class="open-cert-item">
+                                <h3 class="dot-header">Kubernetes Sertifikası</h3>
+                                <p class="cert-details">K8s Training: From Zero to Cloud - Rayan Slim</p>
+                            </div>
                         </div>
                     </div>
+
                 </div>
 
             </div>
