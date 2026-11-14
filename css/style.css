@@ -1016,3 +1016,131 @@ button:focus-visible {
         transform: none !important;
     }
 }
+
+/* ==========================================================================
+   PROJE KARTLARI: KONSEPT KAPAKLAR VE TEKNOLOJİ ETİKETLERİ
+   ========================================================================== */
+
+.project-inner-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* Kart Üstü Konsept Kapak Alanı */
+.project-visual-banner {
+    position: relative;
+    height: 135px;
+    margin: -1.5rem -1.5rem 1.25rem -1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(37, 99, 235, 0.1);
+    background-color: #f8fafc;
+    background-image: radial-gradient(rgba(37, 99, 235, 0.14) 1px, transparent 1px);
+    background-size: 16px 16px;
+    overflow: hidden;
+    transition: background-color 0.35s ease;
+}
+
+/* Her proje için hafif ton farklılığı */
+.banner-route {
+    background:
+        radial-gradient(rgba(37, 99, 235, 0.15) 1px, transparent 1px),
+        linear-gradient(135deg, rgba(239, 246, 255, 0.9) 0%, rgba(219, 234, 254, 0.55) 100%);
+    background-size: 16px 16px, 100% 100%;
+}
+
+.banner-privacy {
+    background:
+        radial-gradient(rgba(14, 165, 233, 0.15) 1px, transparent 1px),
+        linear-gradient(135deg, rgba(240, 249, 255, 0.9) 0%, rgba(224, 242, 254, 0.55) 100%);
+    background-size: 16px 16px, 100% 100%;
+}
+
+.banner-crm {
+    background:
+        radial-gradient(rgba(79, 70, 229, 0.14) 1px, transparent 1px),
+        linear-gradient(135deg, rgba(238, 242, 255, 0.9) 0%, rgba(224, 231, 255, 0.55) 100%);
+    background-size: 16px 16px, 100% 100%;
+}
+
+/* Sağ Üst Kategori Rozeti */
+.project-category-badge {
+    position: absolute;
+    top: 0.85rem;
+    right: 0.85rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: #1d4ed8;
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    padding: 0.3rem 0.65rem;
+    border-radius: 999px;
+    border: 1px solid rgba(37, 99, 235, 0.16);
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+}
+
+/* Merkezdeki İkon Kutusu */
+.banner-icon-wrapper {
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(37, 99, 235, 0.18);
+    box-shadow: 0 8px 20px -4px rgba(37, 99, 235, 0.14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2563eb;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+}
+
+.banner-icon-wrapper svg {
+    width: 26px;
+    height: 26px;
+}
+
+.project-inner-card:hover .banner-icon-wrapper {
+    transform: translateY(-4px) scale(1.06);
+    box-shadow: 0 12px 24px -4px rgba(37, 99, 235, 0.24);
+}
+
+/* Kart Gövdesi ve Teknoloji Rozetleri */
+.project-card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card-body .timeline-desc {
+    flex: 1;
+    margin-bottom: 1.1rem;
+}
+
+.project-tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-bottom: 1.25rem;
+}
+
+.tech-pill {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #334155;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    padding: 0.22rem 0.6rem;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.project-inner-card:hover .tech-pill {
+    background: #eff6ff;
+    color: #1e40af;
+    border-color: #bfdbfe;
+}
