@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Ana Sayfa - Berke Beşli</title>
-    <meta name="description" content="Yazılım geliştirme, yapay zeka ve veri bilimi odaklı çalışan Mekatronik Mühendisi Berke Beşli'nin kişisel portfolyosu."> <!-- Buradaki yazı değişirilebilir-->
+    <meta name="description" content="Yazılım geliştirme, yapay zeka ve veri bilimi odaklı çalışan Mekatronik Mühendisi Berke Beşli'nin kişisel portfolyosu.">
     <link rel="canonical" href="https://berkebesli.github.io/">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Ana Sayfa - Berke Beşli">
     <meta property="og:description" content="Yazılım geliştirme, yapay zeka ve veri bilimi odaklı çalışan Mekatronik Mühendisi Berke Beşli'nin kişisel portfolyosu.">
     <meta property="og:url" content="https://berkebesli.github.io/">
-    <!-- <meta property="og:image" content="https://berkebesli.github.io/images/og-image.jpg">     resim ekleme kısmı  -->
-    <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico">        icon kısmı -->
 
-    <!-- Performans (Phase 5) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <a href="#main-content" class="skip-link">İçeriğe geç</a>
+    
+    <!-- Hareketli Dalga Arka Planı -->
     <div class="premium-wave-bg" aria-hidden="true">
+        <div class="ambient-glow glow-top-left"></div>
+        <div class="ambient-glow glow-top-right"></div>
         <svg class="editorial-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
             <defs>
@@ -39,9 +40,11 @@
         </svg>
         <div class="wave-blur-overlay"></div>
     </div>
+
+    <!-- Navigasyon -->
     <nav aria-label="Ana navigasyon">
         <div class="nav-container">
-            <a href="index.html" class="brand">Berke <span>Beşli</span></a>
+            <a href="index.html" class="brand">Berke <span>Beşli.</span></a>
             <button class="nav-toggle" id="navToggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="navLinks">
                 <span></span><span></span><span></span>
             </button>
@@ -54,52 +57,130 @@
     </nav>
 
     <main id="main-content">
-        <section class="hero-container">
-            <div class="hero-card text-section">
-
-                <h1>Merhaba, ben <br> Berke Beşli.</h1>
-
-                <p>
+        <!-- HERO ALANI (örnek1.png stili ferah yapı ve çift halkalı profil) -->
+        <section class="hero-container reveal">
+            <div class="hero-text-open">
+                <span class="hero-greeting">Merhaba, ben Berke Beşli 👋</span>
+                <h1>
+                    <span class="text-gradient">Veri Bilimi</span>, Yapay Zeka &amp; Yazılım Mühendisi
+                </h1>
+                <p class="hero-lead">
                     Yazılım geliştirme, yapay zeka ve veri bilimi alanlarına odaklı bir mekatronik mühendisiyim. Veri bilimi tecrübemi ve yazılım geliştirme becerilerimi kullanarak, gerçek sorunları çözen pratik ve etkili projeler geliştiriyorum.
                 </p>
 
                 <div class="buttons">
-                    <a href="resume.html" class="btn btn-primary">ÖZGEÇMİŞİMİ GÖRÜNTÜLE</a>
-                    <a href="projects.html" class="btn btn-outline">PROJELERİ KEŞFET</a>
+                    <a href="projects.html" class="btn btn-primary">PROJELERİ KEŞFET</a>
+                    <a href="resume.html" class="btn btn-outline">ÖZGEÇMİŞİMİ GÖRÜNTÜLE</a>
                 </div>
             </div>
 
-            <div class="hero-card image-section">
-                <img src="images/profile.jpeg" alt="Berke Beşli Profil Fotoğrafı" class="profile-image">
+            <div class="hero-image-open">
+                <div class="profile-ring-outer">
+                    <div class="profile-ring-inner">
+                        <img src="images/profile.jpeg" alt="Berke Beşli Profil Fotoğrafı" class="profile-image-circle">
+                    </div>
+                </div>
             </div>
         </section>
 
+        <!-- TEKNOLOJİ & ARAÇLAR KAPSÜL ŞERİDİ (örnek3.png stili) -->
+        <section class="tech-pills-section reveal" aria-label="Kullandığım Teknolojiler">
+            <div class="tech-pills-wrapper">
+                <div class="tech-pill">
+                    <div class="pill-icon-circle">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c-5.33 0-5 2.3-5 2.3V7h5v1H5.5S2 7.6 2 12.5 5.1 17 5.1 17H7v-2.2s-.1-2.8 2.7-2.8h4.5s2.6.1 2.6-2.5V4.8S17.2 2 12 2z"/><path d="M12 22c5.33 0 5-2.3 5-2.3V17h-5v-1h6.5s3.5.4 3.5-4.5S18.9 7 18.9 7H17v2.2s.1 2.8-2.7 2.8H9.8s-2.6-.1-2.6 2.5v4.7S6.8 22 12 22z"/></svg>
+                    </div>
+                    <span class="pill-title">Python</span>
+                    <span class="pill-sub">Data &amp; AI</span>
+                </div>
 
-        <section id="about" class="about-card">
-            <h2>Hakkımda</h2>
-            <p>
-                İstanbul'da yaşayan, yazılım geliştirici olmayı hedefleyen yeni mezun bir mekatronik mühendisiyim. Disiplinlerarası mühendislik altyapımın getirdiği sistem odaklı bakış açısıyla, bir yandan C# ve Python gibi dillerle sağlam bir yazılım temeli inşa ederken, diğer yandan veri bilimi ve makine öğrenmesi alanlarında pratik projeler geliştirmeye odaklanıyorum.
-            </p>
-            <br>
-            <p>
-                Python ile uçtan uca veri süreçleri tasarlamak, Scikit-Learn ve XGBoost gibi kütüphanelerle tahmine dayalı modeller kurmak ve generative AI teknolojilerinde kendimi geliştirmek üzerine büyük bir motivasyonla çalışıyorum.
-            </p>
-            <br>
-            <p>
-                Geçmişteki iş tecrübelerimin bana kattığı iletişim becerileri ve müşteri anlayışı, problemlere hem teknik açıdan, hem de kullanıcı ihtiyaçlarını gözeten, geniş bir perspektiften değerlendirmemi sağlıyor. Hedefim, yenilikçi yaklaşımlar kullanarak, günlük hayatı veya iş süreçlerini kolaylaştıran, somut fayda sağlayan, pratik çözümler üretmek ve projeler geliştirmektir.
-            </p>
-        </section>
+                <div class="tech-pill">
+                    <div class="pill-icon-circle">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                    </div>
+                    <span class="pill-title">SQL</span>
+                    <span class="pill-sub">Veritabanı</span>
+                </div>
 
-        <section id="contact" class="contact-section">
-            <h2>İletişim</h2>
-            <p>Yeni projeler, sistem mimarisi tartışmaları veya olası işbirlikleri için bana mesaj bırakmaktan çekinmeyin.</p>
-            <div class="contact-buttons">
-                <a href="mailto:berkebesli3@gmail.com" class="contact-btn">E-Posta</a>
-                <a href="https://www.linkedin.com/in/berke-beşli-5b1593320" class="contact-btn" target="_blank" rel="noopener">LinkedIn<span class="visually-hidden"> (yeni sekmede açılır)</span></a>
-                <a href="https://github.com/BerkeBesli" class="contact-btn" target="_blank" rel="noopener">GitHub<span class="visually-hidden"> (yeni sekmede açılır)</span></a>
+                <div class="tech-pill">
+                    <div class="pill-icon-circle">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4v1a3 3 0 0 1 3 3v2a3 3 0 0 1-3 3h-1v4l-3-2-3 2v-4H8a3 3 0 0 1-3-3v-2a3 3 0 0 1 3-3V6a4 4 0 0 1 4-4z"/><circle cx="9.5" cy="9.5" r="1"/><circle cx="14.5" cy="9.5" r="1"/></svg>
+                    </div>
+                    <span class="pill-title">ML &amp; AI</span>
+                    <span class="pill-sub">Scikit / LLM</span>
+                </div>
+
+                <div class="tech-pill">
+                    <div class="pill-icon-circle">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    </div>
+                    <span class="pill-title">C# / .NET</span>
+                    <span class="pill-sub">Yazılım</span>
+                </div>
+
+                <div class="tech-pill">
+                    <div class="pill-icon-circle">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    </div>
+                    <span class="pill-title">FastAPI</span>
+                    <span class="pill-sub">Backend API</span>
+                </div>
+
+                <div class="tech-pill">
+                    <div class="pill-icon-circle">
+                        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12.5c-1.5-.8-3.2-.5-4 0-.5-2-2.2-3.5-4.5-3.5H4c-.6 0-1 .4-1 1v3c0 3.9 3.1 7 7 7h3c4.4 0 8-3.1 9-7.5z"/><rect x="6" y="5" width="3" height="3"/><rect x="10" y="5" width="3" height="3"/><rect x="10" y="1" width="3" height="3"/></svg>
+                    </div>
+                    <span class="pill-title">Docker</span>
+                    <span class="pill-sub">DevOps</span>
+                </div>
             </div>
         </section>
 
+        <!-- HAKKIMDA ALANI (örnek3.png stili açık editoryal düzen) -->
+        <section id="about" class="about-open-section reveal">
+            <div class="about-header-column">
+                <h2 class="editorial-heading">Hakkımda</h2>
+                <div class="heading-line-dot"></div>
+                <p class="about-tagline">
+                    Mekatronik mühendisliği disipliniyle veri bilimi ve yazılım mimarisini birleştiriyorum.
+                </p>
+            </div>
+
+            <div class="about-text-column">
+                <p>
+                    İstanbul'da yaşayan, yazılım geliştirici olmayı hedefleyen yeni mezun bir mekatronik mühendisiyim. Disiplinlerarası mühendislik altyapımın getirdiği sistem odaklı bakış açısıyla, bir yandan <strong>C# ve Python</strong> gibi dillerle sağlam bir yazılım temeli inşa ederken, diğer yandan <strong>veri bilimi ve makine öğrenmesi</strong> alanlarında pratik projeler geliştirmeye odaklanıyorum.
+                </p>
+                <p>
+                    Python ile uçtan uca veri süreçleri tasarlamak, <strong>Scikit-Learn ve XGBoost</strong> gibi kütüphanelerle tahmine dayalı modeller kurmak ve <strong>Generative AI</strong> teknolojilerinde kendimi geliştirmek üzerine büyük bir motivasyonla çalışıyorum.
+                </p>
+                <p>
+                    Geçmişteki iş tecrübelerimin bana kattığı iletişim becerileri ve müşteri anlayışı, problemleri hem teknik açıdan hem de kullanıcı ihtiyaçlarını gözeten geniş bir perspektiften değerlendirmemi sağlıyor. Hedefim, yenilikçi yaklaşımlar kullanarak günlük hayatı veya iş süreçlerini kolaylaştıran, somut fayda sağlayan pratik çözümler üretmektir.
+                </p>
+            </div>
+        </section>
+
+        <!-- İLETİŞİM ALANI -->
+        <section id="contact" class="contact-open-section reveal">
+            <div class="contact-content">
+                <h2 class="editorial-heading">İletişime Geçin</h2>
+                <div class="heading-line-dot"></div>
+                <p>Yeni projeler, sistem mimarisi tartışmaları veya olası işbirlikleri için bana mesaj bırakmaktan çekinmeyin.</p>
+                <div class="contact-buttons">
+                    <a href="mailto:berkebesli3@gmail.com" class="contact-btn">
+                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        E-Posta Gönder
+                    </a>
+                    <a href="https://www.linkedin.com/in/berke-beşli-5b1593320" class="contact-btn" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        LinkedIn<span class="visually-hidden"> (yeni sekmede açılır)</span>
+                    </a>
+                    <a href="https://github.com/BerkeBesli" class="contact-btn" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        GitHub<span class="visually-hidden"> (yeni sekmede açılır)</span>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="site-footer">
