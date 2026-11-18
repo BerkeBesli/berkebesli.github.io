@@ -5,27 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Projeler - Berke Beşli</title>
-    <meta name="description" content="Veri bilimi, yapay zeka otomasyonları ve modern yazılım mimarileri kullanılarak geliştirilmiş makine öğrenmesi projeleri.">
+    <meta name="description" content="Veri bilimi, yapay zeka otomasyonları, LLM tabanlı sistemler ve modern yazılım mimarileri kullanılarak geliştirilmiş mühendislik projeleri.">
     <link rel="canonical" href="https://berkebesli.github.io/projects.html">
 
     <!-- Open Graph (Sosyal Medya Paylaşımları İçin) -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Projeler - Berke Beşli">
-    <meta property="og:description" content="Veri bilimi, yapay zeka otomasyonları ve modern yazılım mimarileri kullanılarak geliştirilmiş makine öğrenmesi projeleri.">
+    <meta property="og:description" content="Veri bilimi, yapay zeka otomasyonları, LLM tabanlı sistemler ve modern yazılım mimarileri kullanılarak geliştirilmiş mühendislik projeleri.">
     <meta property="og:url" content="https://berkebesli.github.io/projects.html">
-    <!-- <meta property="og:image" content="https://berkebesli.github.io/images/og-image.jpg"> -->
-    <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
 
-    <!-- Performans (Phase 5) -->
+    <!-- Performans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <a href="#main-content" class="skip-link">İçeriğe geç</a>
+
+    <!-- Arka Plan Dalgaları ve Ambiyans Işıkları (Diğer sayfalarla tam uyumlu) -->
     <div class="premium-wave-bg" aria-hidden="true">
+        <div class="ambient-glow glow-top-left"></div>
+        <div class="ambient-glow glow-top-right"></div>
         <svg class="editorial-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
             <defs>
@@ -56,40 +58,92 @@
     </nav>
 
     <main id="main-content">
-        <h1 class="page-title">PROJELER</h1>
-
-        <section class="resume-summary-card">
-            <h2>Öne Çıkan Çalışmalar</h2>
-            <p>
-                Gerçek dünya problemlerine veri odaklı ve algoritmik çözümler sunan çalışmalar. Veri bilimi, yapay zeka otomasyonları ve modern yazılım mimarileri kullanılarak geliştirilmiş projelere ait örnekler aşağıda yer almaktadır.
-            </p>
+        <!-- Editoryal Üst Başlık Bölümü (index.html ve resume.html ile aynı dilde) -->
+        <section class="resume-intro-open reveal">
+            <div class="resume-intro-header">
+                <span class="section-kicker">Seçilmiş Çalışmalar &amp; Sistemler</span>
+                <h1 class="editorial-title">Üretim Odaklı <span class="text-gradient">Projeler</span></h1>
+                <div class="heading-line-dot"></div>
+                <p class="about-tagline">
+                    Veri bilimi, üretken yapay zeka (LLM) ve algoritmik optimizasyonu uçtan uca çalışan yazılım mimarilerine dönüştüren mühendislik çözümleri.
+                </p>
+            </div>
+            <div class="resume-intro-text">
+                <p>
+                    Geliştirdiğim projelerde yalnızca model eğitmeye değil; problemi <strong>veri mühendisliği</strong>, <strong>algoritmik optimizasyon</strong> ve <strong>canlıya alınabilir arka uç (FastAPI, Docker, n8n)</strong> katmanlarıyla bir bütün olarak ele almaya odaklanıyorum.
+                </p>
+                <p>
+                    Aşağıda lojistik rota optimizasyonundan gerçek zamanlı LLM gizlilik analizine ve ölçeklenebilir CRM analitiğine kadar geliştirdiğim öne çıkan sistemlerin mimari özetlerini ve kaynak kodlarını inceleyebilirsiniz.
+                </p>
+            </div>
         </section>
 
-        <section class="resume-main-card">
+        <!-- Proje Kartları Bölümü -->
+        <section class="projects-open-section reveal">
             <div class="projects-grid">
 
-                <!-- Proje 1: SmartRoute AI -->
+                <!-- PROJE 1: SmartRoute AI -->
                 <article class="project-inner-card">
                     <div class="project-visual-banner banner-route" aria-hidden="true">
-                        <span class="project-category-badge">Optimizasyon &amp; Otomasyon</span>
-                        <div class="banner-icon-wrapper">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="6" cy="19" r="3"></circle>
-                                <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"></path>
-                                <circle cx="18" cy="5" r="3"></circle>
-                            </svg>
-                        </div>
+                        <span class="project-category-badge">Optimizasyon &amp; AI Otomasyon</span>
+                        <!-- Özgün SVG İllüstrasyonu: Depo Izgarası ve Otonom Rota Optimizasyonu -->
+                        <svg class="project-illustration" viewBox="0 0 360 155" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Depo Raf Blokları -->
+                            <rect x="34" y="28" width="52" height="22" rx="5" fill="#ffffff" fill-opacity="0.75" stroke="#bfdbfe" stroke-width="1.2"/>
+                            <rect x="34" y="64" width="52" height="22" rx="5" fill="#ffffff" fill-opacity="0.75" stroke="#bfdbfe" stroke-width="1.2"/>
+                            <rect x="34" y="100" width="52" height="22" rx="5" fill="#ffffff" fill-opacity="0.75" stroke="#bfdbfe" stroke-width="1.2"/>
+                            <rect x="122" y="28" width="52" height="22" rx="5" fill="#ffffff" fill-opacity="0.75" stroke="#bfdbfe" stroke-width="1.2"/>
+                            <rect x="122" y="64" width="52" height="22" rx="5" fill="#ffffff" fill-opacity="0.75" stroke="#bfdbfe" stroke-width="1.2"/>
+                            <rect x="122" y="100" width="52" height="22" rx="5" fill="#ffffff" fill-opacity="0.75" stroke="#bfdbfe" stroke-width="1.2"/>
+
+                            <!-- Arka Plan Alternatif Rotalar -->
+                            <path d="M24 130 L104 130 L104 40 L194 40" stroke="#93c5fd" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6"/>
+
+                            <!-- Optimum Aktif Rota (Hover ile canlanan çizgi) -->
+                            <path class="svg-animated-path" d="M24 130 L24 56 L104 56 L104 92 L194 92 L194 42 L245 42" stroke="url(#routeGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+                            <!-- Rota Düğümleri (Nodes) -->
+                            <circle cx="24" cy="130" r="5" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+                            <circle cx="104" cy="56" r="5" fill="#0ea5e9" stroke="#ffffff" stroke-width="2"/>
+                            <circle cx="104" cy="92" r="5" fill="#0ea5e9" stroke="#ffffff" stroke-width="2"/>
+                            <circle cx="194" cy="42" r="5.5" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+
+                            <!-- Sağ Bilgi Kartı: ABC & n8n Metrik Kutusu -->
+                            <g class="svg-floating-card" transform="translate(216, 52)">
+                                <rect x="0" y="0" width="116" height="74" rx="10" fill="#ffffff" fill-opacity="0.95" stroke="#93c5fd" stroke-width="1.2"/>
+                                <text x="12" y="21" fill="#64748b" font-size="8.5" font-weight="600" font-family="Inter, sans-serif">ROTA VERİMLİLİĞİ</text>
+                                <text x="12" y="42" fill="#2563eb" font-size="15" font-weight="800" font-family="Inter, sans-serif">ABC + RF</text>
+                                <rect x="12" y="52" width="92" height="12" rx="6" fill="#eff6ff"/>
+                                <circle cx="20" cy="58" r="3" fill="#0ea5e9"/>
+                                <text x="28" y="61" fill="#1d4ed8" font-size="7.5" font-weight="700" font-family="Inter, sans-serif">n8n Otonom Akış</text>
+                            </g>
+
+                            <defs>
+                                <linearGradient id="routeGrad" x1="24" y1="130" x2="245" y2="42" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#2563eb"/>
+                                    <stop offset="1" stop-color="#0ea5e9"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
                     </div>
 
                     <div class="project-card-body">
-                        <h3>SmartRoute AI</h3>
+                        <div class="project-title-row">
+                            <h3>SmartRoute AI</h3>
+                            <span class="project-role-tag">Veri Bilimi &amp; MLOps</span>
+                        </div>
                         <p class="timeline-desc">
-                            Büyük şirketlerin depolarında lojistik ve toplama süreçlerini optimize eden yapay zeka destekli proje. Apriori analizi ve Yapay Arı Kolonisi (ABC) algoritması ile özellik mühendisliği uygulanarak, n8n üzerinde çalışan otonom bir rota optimizasyonu projesidir.
+                            Büyük ölçekli depolarda sipariş toplama ve yerleşim süreçlerini optimize eden uçtan uca karar destek sistemi. Pareto ABC sınıflandırması ve Apriori birliktelik kurallarıyla ürün yerleşimini optimize eder; Yapay Arı Kolonisi (ABC) algoritması ve Random Forest mesafe tahminiyle en kısa rotayı hesaplayıp Docker üzerindeki n8n akışıyla otonom olarak ilgili birimlere iletir.
                         </p>
+                        <div class="project-pipeline-box">
+                            <span class="pipeline-label">Mimari Akış:</span>
+                            <span class="pipeline-steps">Apriori &amp; Pareto &rarr; ABC Meta-Sezgisel &rarr; Random Forest &rarr; Docker &amp; n8n</span>
+                        </div>
                         <div class="project-tech-stack" aria-label="Kullanılan teknolojiler">
                             <span class="tech-pill">Python</span>
-                            <span class="tech-pill">Apriori</span>
+                            <span class="tech-pill">Scikit-Learn</span>
                             <span class="tech-pill">ABC Algoritması</span>
+                            <span class="tech-pill">Apriori</span>
                             <span class="tech-pill">n8n</span>
                             <span class="tech-pill">Docker</span>
                         </div>
@@ -103,29 +157,62 @@
                     </div>
                 </article>
 
-                <!-- Proje 2: CookieExplainer -->
+                <!-- PROJE 2: CookieExplainer -->
                 <article class="project-inner-card">
                     <div class="project-visual-banner banner-privacy" aria-hidden="true">
-                        <span class="project-category-badge">GenAI &amp; Tarayıcı Eklentisi</span>
-                        <div class="banner-icon-wrapper">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                                <path d="m9 12 2 2 4-4"></path>
-                            </svg>
-                        </div>
+                        <span class="project-category-badge">GenAI &amp; FastAPI Mimarisi</span>
+                        <!-- Özgün SVG İllüstrasyonu: Tarayıcı Penceresi + LLM Gizlilik Skoru Kalkanı -->
+                        <svg class="project-illustration" viewBox="0 0 360 155" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Sol Tarayıcı Penceresi -->
+                            <rect x="26" y="26" width="175" height="104" rx="8" fill="#ffffff" fill-opacity="0.82" stroke="#bae6fd" stroke-width="1.2"/>
+                            <circle cx="38" cy="37" r="3" fill="#93c5fd"/>
+                            <circle cx="48" cy="37" r="3" fill="#bae6fd"/>
+                            <circle cx="58" cy="37" r="3" fill="#e0f2fe"/>
+                            <line x1="26" y1="46" x2="201" y2="46" stroke="#e0f2fe" stroke-width="1.2"/>
+
+                            <!-- Taranan Politika Metin Çizgileri -->
+                            <rect x="38" y="58" width="90" height="6" rx="3" fill="#cbd5e1"/>
+                            <rect x="38" y="72" width="142" height="5" rx="2.5" fill="#e2e8f0"/>
+                            <rect x="38" y="83" width="128" height="5" rx="2.5" fill="#bfdbfe"/>
+                            <rect x="38" y="94" width="150" height="5" rx="2.5" fill="#e2e8f0"/>
+                            <rect x="38" y="108" width="64" height="10" rx="5" fill="#eff6ff" stroke="#93c5fd" stroke-width="1"/>
+
+                            <!-- LLM Bağlantı Akışı -->
+                            <path class="svg-animated-path" d="M185 85 L222 85" stroke="#0ea5e9" stroke-width="2.5" stroke-dasharray="4 3" stroke-linecap="round"/>
+
+                            <!-- Sağ Yüzen LLM Analiz Kartı -->
+                            <g class="svg-floating-card" transform="translate(214, 38)">
+                                <rect x="0" y="0" width="120" height="84" rx="10" fill="#ffffff" fill-opacity="0.96" stroke="#7dd3fc" stroke-width="1.3"/>
+                                <!-- Kalkan İkonu -->
+                                <path d="M26 22 L38 27 V36 C38 45 32.8 52.8 26 56 C19.2 52.8 14 45 14 36 V27 L26 22 Z" fill="#eff6ff" stroke="#2563eb" stroke-width="1.8"/>
+                                <path d="M22 38 L25 41 L31 35" stroke="#0ea5e9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                <!-- Skor ve LLM Etiketi -->
+                                <text x="48" y="33" fill="#64748b" font-size="8" font-weight="600" font-family="Inter, sans-serif">GİZLİLİK SKORU</text>
+                                <text x="48" y="51" fill="#0f172a" font-size="16" font-weight="800" font-family="Inter, sans-serif">92<tspan fill="#0ea5e9" font-size="11">/100</tspan></text>
+                                <rect x="14" y="64" width="92" height="11" rx="5.5" fill="#f0f9ff"/>
+                                <text x="24" y="72" fill="#0284c7" font-size="7.5" font-weight="700" font-family="Inter, sans-serif">FastAPI + LLM Özeti</text>
+                            </g>
+                        </svg>
                     </div>
 
                     <div class="project-card-body">
-                        <h3>CookieExplainer</h3>
+                        <div class="project-title-row">
+                            <h3>CookieExplainer</h3>
+                            <span class="project-role-tag">LLM &amp; Full-Stack</span>
+                        </div>
                         <p class="timeline-desc">
-                            Web sitelerindeki karmaşık çerez ve gizlilik politikalarını büyük dil modelleri (LLM) desteğiyle gerçek zamanlı analiz eden Chrome eklentisi. FastAPI tabanlı arka uç mimarisiyle gizlilik risk skorlarını hesaplar ve sayfa içinde anlaşılır özetler sunar.
+                            Web sitelerindeki karmaşık çerez ve gizlilik politikalarını büyük dil modelleri (LLM) aracılığıyla gerçek zamanlı analiz eden yapay zeka destekli Chrome eklentisi. Sayfa içeriğini yakalayarak FastAPI tabanlı arka uç servisine iletir; veri paylaşım risklerini puanlar ve kullanıcıya sayfa içinde yüzen (floating) anlaşılır gizlilik özetleri sunar.
                         </p>
+                        <div class="project-pipeline-box">
+                            <span class="pipeline-label">Mimari Akış:</span>
+                            <span class="pipeline-steps">DOM Yakalama &rarr; FastAPI REST &rarr; LLM Prompt &amp; Skorlama &rarr; Sayfa İçi UI</span>
+                        </div>
                         <div class="project-tech-stack" aria-label="Kullanılan teknolojiler">
                             <span class="tech-pill">Python</span>
                             <span class="tech-pill">FastAPI</span>
                             <span class="tech-pill">LLM / GenAI</span>
                             <span class="tech-pill">JavaScript</span>
-                            <span class="tech-pill">Chrome Extension</span>
+                            <span class="tech-pill">Chrome Extension API</span>
                         </div>
                     </div>
 
@@ -137,30 +224,61 @@
                     </div>
                 </article>
 
-                <!-- Proje 3: FLO Müşteri Segmentasyonu -->
+                <!-- PROJE 3: FLO Müşteri Segmentasyonu -->
                 <article class="project-inner-card">
                     <div class="project-visual-banner banner-crm" aria-hidden="true">
-                        <span class="project-category-badge">Veri Bilimi &amp; CRM</span>
-                        <div class="banner-icon-wrapper">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M3 3v18h18"></path>
-                                <path d="M18 17V9"></path>
-                                <path d="M13 17V5"></path>
-                                <path d="M8 17v-3"></path>
-                            </svg>
-                        </div>
+                        <span class="project-category-badge">CRM Analitiği &amp; Veri Bilimi</span>
+                        <!-- Özgün SVG İllüstrasyonu: RFM Segmentasyon Matrisi ve Kümeleme Grafiği -->
+                        <svg class="project-illustration" viewBox="0 0 360 155" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Analitik Grafik Çerçevesi -->
+                            <rect x="28" y="28" width="168" height="102" rx="8" fill="#ffffff" fill-opacity="0.82" stroke="#c7d2fe" stroke-width="1.2"/>
+                            <!-- Sütun Grafikleri (RFM Metrikleri) -->
+                            <rect x="48" y="88" width="18" height="28" rx="3" fill="#bfdbfe"/>
+                            <rect x="78" y="70" width="18" height="46" rx="3" fill="#93c5fd"/>
+                            <rect x="108" y="54" width="18" height="62" rx="3" fill="#60a5fa"/>
+                            <rect x="138" y="40" width="18" height="76" rx="3" fill="#2563eb"/>
+                            <!-- Trend Eğrisi -->
+                            <path class="svg-animated-path" d="M46 80 Q95 62 147 35" stroke="#0ea5e9" stroke-width="2.5" stroke-linecap="round"/>
+                            <circle cx="147" cy="35" r="4" fill="#0ea5e9" stroke="#ffffff" stroke-width="1.5"/>
+
+                            <!-- Sağ Yüzen RFM Segment Kartı -->
+                            <g class="svg-floating-card" transform="translate(212, 36)">
+                                <rect x="0" y="0" width="122" height="86" rx="10" fill="#ffffff" fill-opacity="0.96" stroke="#a5b4fc" stroke-width="1.3"/>
+                                <text x="12" y="20" fill="#64748b" font-size="8" font-weight="600" font-family="Inter, sans-serif">RFM SEGMENTASYONU</text>
+                                <!-- Segment Satırları -->
+                                <rect x="12" y="28" width="98" height="14" rx="4" fill="#eff6ff"/>
+                                <circle cx="20" cy="35" r="3" fill="#2563eb"/>
+                                <text x="28" y="38" fill="#1e3a8a" font-size="8" font-weight="700" font-family="Inter, sans-serif">Champions (555)</text>
+
+                                <rect x="12" y="46" width="98" height="14" rx="4" fill="#f0f9ff"/>
+                                <circle cx="20" cy="53" r="3" fill="#0ea5e9"/>
+                                <text x="28" y="56" fill="#0c4a6e" font-size="8" font-weight="600" font-family="Inter, sans-serif">Loyal Customers</text>
+
+                                <rect x="12" y="64" width="98" height="14" rx="4" fill="#f8fafc"/>
+                                <circle cx="20" cy="71" r="3" fill="#64748b"/>
+                                <text x="28" y="74" fill="#334155" font-size="8" font-weight="600" font-family="Inter, sans-serif">At Risk &amp; Hibernating</text>
+                            </g>
+                        </svg>
                     </div>
 
                     <div class="project-card-body">
-                        <h3>FLO Müşteri Segmentasyonu</h3>
+                        <div class="project-title-row">
+                            <h3>FLO Müşteri Segmentasyonu</h3>
+                            <span class="project-role-tag">CRM &amp; Veri Analitiği</span>
+                        </div>
                         <p class="timeline-desc">
-                            FLO'nun online ve offline satış verileri birleştirilerek Recency, Frequency ve Monetary metriklerine dayalı kural tabanlı bir RFM segmentasyon modeli geliştirilmiştir. Hedefli pazarlama kampanyaları için kullanıma hazır müşteri ID listeleri üretmektedir ve başka projelere uygun olacak şekilde düzenlenebilir.
+                            Çok kanallı (omnipresent) online ve offline perakende verilerini birleştirerek müşteri yaşam döngüsünü analiz eden modüler RFM segmentasyon motoru. Recency, Frequency ve Monetary metriklerini skorlayarak müşteri gruplarını ayrıştırır ve hedefli pazarlama kampanyaları için dışa aktarılabilir aksiyon listeleri üretir.
                         </p>
+                        <div class="project-pipeline-box">
+                            <span class="pipeline-label">Mimari Akış:</span>
+                            <span class="pipeline-steps">Veri Ön İşleme &rarr; RFM Skorlama &rarr; Segment Haritalama &rarr; Otomatik CSV Çıktısı</span>
+                        </div>
                         <div class="project-tech-stack" aria-label="Kullanılan teknolojiler">
                             <span class="tech-pill">Python</span>
                             <span class="tech-pill">Pandas</span>
                             <span class="tech-pill">RFM Analizi</span>
                             <span class="tech-pill">CRM Analytics</span>
+                            <span class="tech-pill">Veri Mühendisliği</span>
                         </div>
                     </div>
 
