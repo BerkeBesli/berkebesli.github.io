@@ -1,5 +1,5 @@
 /* ==========================================================================
-   BERKE BEŞLİ - Portfolyo Web Sitesi (Faz 1 & Faz 2: Açık Editoryal Tema)
+   BERKE BEŞLİ - Portfolyo Web Sitesi 
    ========================================================================== */
 
 :root {
@@ -312,7 +312,7 @@ main > section:last-child {
     transform: scale(1.06);
 }
 
-/* Ana Sayfa Dikey Kapsül (Pill) Teknoloji Şeridi */
+/* Ana Sayfa Pill Teknoloji Şeridi */
 .tech-pills-section {
     padding: 1rem 0;
 }
