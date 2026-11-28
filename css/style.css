@@ -475,11 +475,17 @@ main > section:last-child {
     display: contents;
 }
 
-.block-experience   { grid-column: 1; grid-row: 1; }
-.block-education    { grid-column: 2; grid-row: 1; }
-.block-skills       { grid-column: 1; grid-row: 2; }
-.block-certificates { grid-column: 2; grid-row: 2; }
-.block-languages    { grid-column: 1; grid-row: 3; }
+/* Masaüstü Satır ve Sütun Eşleşmesi */
+.block-experience       { grid-column: 1; grid-row: 1; }
+.block-education        { grid-column: 2; grid-row: 1; }
+.skills-languages-stack {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+.block-certificates     { grid-column: 2; grid-row: 2; }
 
 .resume-block {
     width: 100%;
