@@ -1049,7 +1049,8 @@ main > section:last-child {
         flex-direction: column;
         gap: 3.5rem;
     }
-    .resume-column {
+    .resume-column,
+    .skills-languages-stack {
         display: contents;
     }
     .block-experience   { order: 1; }
