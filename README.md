@@ -1,29 +1,30 @@
 # Berke Beşli — Kişisel Portfolyo
 
-Bu depo, portfolyo web sitemin kaynak kodlarını içermektedir. Bu siteyi hem dijital bir özgeçmiş hem de geliştirdiğim veri odaklı projeleri sergilediğim profesyonel bir vitrin olması amacıyla tasarladım.
+🌐 **Canlı Site:** [berkebesli.github.io](https://berkebesli.github.io/)
 
+Bu depo, kişisel portfolyo web sitemin kaynak kodlarını içermektedir. Siteyi hem dijital bir özgeçmiş hem de veri bilimi, yapay zeka ve yazılım geliştirme alanlarında ürettiğim projeleri sergilediğim sade ve işlevsel bir vitrin olarak tasarladım.
 
 ## 📌 Sitenin İçeriği ve Yapısı
 
-*   **Ana Sayfa:** Profesyonel kimliğimi, temel odak alanlarımı ve teknoloji yığınımı özetleyen giriş bölümü.
-*   **Özgeçmiş:** Akademik geçmişim, iş tecrübelerim ve sahip olduğum profesyonel sertifikaların kronolojik özeti.
-*   **Projeler:** Veri bilimi, makine öğrenmesi ve optimizasyon algoritmaları kullanarak geliştirdiğim uçtan uca çalışmaların detayları ve GitHub depo bağlantıları.
+* **Ana Sayfa (`index.html`):** Profesyonel profilimi, temel odak alanlarımı, kullandığım teknolojileri ve iletişim kanallarını özetleyen giriş sayfası.
+* **Özgeçmiş (`resume.html`):** İş deneyimlerim, akademik geçmişim, teknik yetkinliklerim, sertifikalarım ve yabancı dil seviyelerimin yer aldığı kronolojik sayfa.
+* **Projeler (`projects.html`):** Veri bilimi, optimizasyon algoritmaları ve yapay zeka destekli yazılım çözümleri üzerine geliştirdiğim projelerin açıklamaları, görselleri ve GitHub depo bağlantıları.
 
-## 🛠️ Geliştirme Altyapısı 
+## 🛠️ Geliştirme Altyapısı ve Özellikler
 
-*   **HTML5:** Semantik yapı ve erişilebilirlik standartları.
-*   **CSS3:** Flexbox, CSS Grid ve özel CSS değişkenleri kullanılarak oluşturulan modern UI tasarımı.
-*   **Vanilla JavaScript:** Bağımlılık (dependency) içermeyen, mobil navigasyon yönetimi.
-*   **Hosting & CI/CD:** GitHub Pages
+* **HTML5:** Semantik sayfa yapısı, Open Graph meta etiketleri ve klavye/ekran okuyucu erişilebilirlik standartları (`skip-link`, `aria-label`).
+* **CSS3:** Özel CSS değişkenleri, CSS Grid ve Flexbox kullanılarak oluşturulan kutusuz (open-layout) editoryal arayüz, hareketli SVG dalga arka planı ve mobil ekranlara özel bölüm sıralaması.
+* **Vanilla JavaScript:** Harici kütüphane bağımlılığı olmadan çalışan mobil navigasyon menüsü ve `IntersectionObserver` tabanlı yumuşak kaydırma (scroll-reveal) animasyonları.
+* **Barındırma:** GitHub Pages üzerinden statik yayınlama.
 
-## Proje Mimarisi
+## 📂 Proje Mimarisi
 
-```
-├── index.html          Ana Sayfa (home)
-├── projects.html        Projeler (projects)
-├── resume.html          Özgeçmiş (resume)
+```text
+├── index.html          # Ana sayfa (Karşılama alanı, teknoloji kapsülleri, hakkımda ve iletişim)
+├── resume.html         # Özgeçmiş (Deneyim, eğitim, yetkinlikler, sertifikalar ve diller)
+├── projects.html       # Projeler (Proje kartları, görseller ve GitHub bağlantıları)
 ├── css/
-│   └── style.css        All styles for all three pages
-└── js/
-    └── main.js           Mobile nav toggle (open/close/outside-click/Escape)
-```
+│   └── style.css       # Tüm sayfaların stilleri, dalga animasyonu ve mobil düzen kuralları
+├── js/
+│   └── main.js         # Mobil menü kontrolü ve güvenli scroll-reveal animasyonları
+└── images/             # Profil fotoğrafı ve proje görselleri
