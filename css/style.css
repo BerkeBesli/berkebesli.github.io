@@ -466,21 +466,25 @@ main > section:last-child {
 .resume-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4.5rem;
+    column-gap: 4.5rem;
+    row-gap: 4rem;
     align-items: start;
 }
 
 .resume-column {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
+    display: contents;
 }
+
+.block-experience   { grid-column: 1; grid-row: 1; }
+.block-education    { grid-column: 2; grid-row: 1; }
+.block-skills       { grid-column: 1; grid-row: 2; }
+.block-certificates { grid-column: 2; grid-row: 2; }
+.block-languages    { grid-column: 1; grid-row: 3; }
 
 .resume-block {
     width: 100%;
 }
 
-/* Timeline (Deneyim ve Eğitim) */
 .timeline {
     position: relative;
     border-left: 2px solid rgba(37, 99, 235, 0.2);
@@ -572,7 +576,6 @@ main > section:last-child {
     border-radius: 50%;
 }
 
-/* Kutusuz Yetkinlikler ve Sertifika Satırları */
 .open-list-group {
     display: flex;
     flex-direction: column;
@@ -637,7 +640,6 @@ main > section:last-child {
     margin-top: 0.2rem;
 }
 
-/* Kutusuz Diller Bölümü */
 .open-lang-group {
     display: flex;
     flex-direction: column;
